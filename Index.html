@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <link rel="stylesheet" href="src/style.css" />
   <title>AI poem generator</title>
 </head>
@@ -12,17 +13,12 @@
   <div class="container">
     <h1>French poem generator</h1>
     <main>
-      <form>
+      <form id="poem-generator-form">
         <input type="text" placeholder="Enter the topic of the French poem" autofocus required autocomplete="off"
           class="instructions" />
         <input type="submit" class="submit-button" />
       </form>
-      <div class="poem">
-        Demain, dès l’aube, à l’heure où blanchit la campagne,
-        <br />
-        Je partirai. Vois-tu, je sais que tu m’attends.
-        <br />
-        J’irai par la forêt, j’irai par la montagne.
+      <div class="poem" id="poem">
       </div>
     </main>
   </div>
@@ -34,7 +30,7 @@
       <a href="https://ai-french-poem-project.netlify.app/" target=" _blank">hosted on Netlify</a>
     </p>
   </footer>
-  <script src="src/index.js"></script>
+  <script src="src/Index.js"></script>
 </body>
 
 </html>
